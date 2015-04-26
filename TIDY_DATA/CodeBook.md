@@ -34,7 +34,8 @@ The tidy data consists of the following variables -
 "Activity" -- This variable holds the activity performed by each subject. The activities can take the following values : 
 	LAYING , STANDING , WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING
 
-The following variables are all numeric data
+The following variables are all numeric data. the mean() or std() at the end of each name describes whether the variable is the mean on the measurement or the 
+standard deviation on the measurement in the original raw data. The X, Y and Z indicate the direction of the measurement.
 	
 "tBodyAcc-mean()-X" -- This column holds the mean of the mean of the body acceleration signal in the X direction for each subject and each activity 
 
@@ -83,46 +84,91 @@ The following variables are all numeric data
 "tBodyGyro-std()-Y" -- This column holds the mean of the standard deviation of the body angular acceleration jerk signal in the Y direction for each subject and each activit
 
 "tBodyGyro-std()-Z" -- This column holds the mean of the standard deviation of the body angular acceleration jerk signal in the Z direction for each subject and each activity 
-All other variables also are the mean of each variable for each subject for each activity. 
+
+Similarly , the following variables also are the mean values of each of these variables grouped by each subject and each activity the mean() or std() at the end describes 
+whether the variable is the mean on the measurement or the standard deviation on the measurement in the original raw data. The X, Y and Z indicate the direction of the measurement.
+
 "tBodyGyroJerk-mean()-X" 
+
 "tBodyGyroJerk-mean()-Y"
+
  "tBodyGyroJerk-mean()-Z" 
+ 
  "tBodyGyroJerk-std()-X" 
+ 
  "tBodyGyroJerk-std()-Y"
+ 
 "tBodyGyroJerk-std()-Z" 
+
 "tBodyAccMag-mean()" 
+
 "tBodyAccMag-std()" 
+
 "tGravityAccMag-mean()" 
+
 "tGravityAccMag-std()" 
+
 "tBodyAccJerkMag-mean()" 
+
 "tBodyAccJerkMag-std()"
+
  "tBodyGyroMag-mean()"
+ 
  "tBodyGyroMag-std()" 
+ 
  "tBodyGyroJerkMag-mean()" 
+ 
  "tBodyGyroJerkMag-std()" 
+ 
  "fBodyAcc-mean()-X"
+ 
 "fBodyAcc-mean()-Y" 
+
 "fBodyAcc-mean()-Z"
+
  "fBodyAcc-std()-X" 
+ 
  "fBodyAcc-std()-Y" 
+ 
  "fBodyAcc-std()-Z" 
+ 
  "fBodyAccJerk-mean()-X" 
+ 
  "fBodyAccJerk-mean()-Y" 
+ 
 "fBodyAccJerk-mean()-Z" 
+
 "fBodyAccJerk-std()-X" 
+
 "fBodyAccJerk-std()-Y" 
+
 "fBodyAccJerk-std()-Z" 
+
+
 "fBodyGyro-mean()-X" 
+
 "fBodyGyro-mean()-Y" 
+
 "fBodyGyro-mean()-Z" 
+
 "fBodyGyro-std()-X" 
+
 "fBodyGyro-std()-Y" 
+
 "fBodyGyro-std()-Z" 
+
 "fBodyAccMag-mean()" 
+
 "fBodyAccMag-std()"
+
 "fBodyBodyAccJerkMag-mean()" 
+
 "fBodyBodyAccJerkMag-std()" 
+
 "fBodyBodyGyroMag-mean()" 
+
 "fBodyBodyGyroMag-std()" 
+
 "fBodyBodyGyroJerkMag-mean()" 
+
 "fBodyBodyGyroJerkMag-std()"
