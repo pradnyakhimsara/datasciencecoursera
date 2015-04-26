@@ -2,15 +2,15 @@
 ## The required data is extracted and merged. Variable names are assigned.
 ## Each record is also assigned activity label.Finally , the data is summarised 
 ## by the mean of each variable name, for each activity for each subject.
-
+library(dplyr)
 ## Constructing folder paths
-mainDir = "C:/Data Analysis Course/UCI HAR Dataset/"
-testDir = paste(mainDir, "test/", sep ="")
-trainDir = paste(mainDir, "train/", sep = "")
+mainDir = getwd()
+testDir = paste(mainDir, "/test/", sep ="")
+trainDir = paste(mainDir, "/train/", sep = "")
 
 ## Importing required data
-activityLabel <- read.table(paste(mainDir, "activity_labels.txt", sep = ""), sep = "", stringsAsFactors = FALSE )
-features <- read.table(paste(mainDir, "features.txt", sep = ""), sep = "", stringsAsFactors = FALSE)
+activityLabel <- read.table(paste(mainDir, "/activity_labels.txt", sep = ""), sep = "", stringsAsFactors = FALSE )
+features <- read.table(paste(mainDir, "/features.txt", sep = ""), sep = "", stringsAsFactors = FALSE)
 s_test <- read.table(paste(testDir, "subject_test.txt", sep = ""), sep = "")
 x_test <- read.table(paste(testDir, "x_test.txt", sep = ""), sep = "")
 y_test <- read.table(paste(testDir, "y_test.txt", sep = ""), sep = "")
@@ -43,7 +43,7 @@ all_data_labeled <- mutate(all_data, Activity = activityLabel[Activity,2])
 ## Finding the mean of each variable for each activity performed by each subject and outputting
 ## the data as a text file
 final_data <- all_data_labeled%>%group_by(Subject, Activity)%>%summarise_each(funs(mean))
-write.table(final_data, paste(mainDir,"tidy_data.txt", sep =""), 
+write.table(final_data, paste(mainDir,"/tidy_data.txt", sep =""), 
             row.names = FALSE)
 
 ## THE END
