@@ -52,6 +52,7 @@ The following files are available for the train and test data. Their description
 #Input and analysis Assumptions
 
 1.run_analysis.R has to be run in from within the folder of the dataset. 
+
 2.Only the mean and standard deviation for the measurements on the data have been extracted. The MeanFreaq() of the measurements has not been extracted by the code
 
 #Analysis Procedure
