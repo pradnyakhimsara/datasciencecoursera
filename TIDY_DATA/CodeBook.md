@@ -1,7 +1,7 @@
 # Code Book for Data Analysed by run_analysis.R 
 
 ## Description of Raw data used for the analysis. 
-The description snipped has been copied from the features_info.txt provided with the Samsung raw data. 
+The description snippet has been copied from the features_info.txt provided with the Samsung raw data. 
 The features available from the original database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median 
 filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal
@@ -33,32 +33,57 @@ The tidy data consists of the following variables -
 
 "Activity" -- This variable holds the activity performed by each subject. The activities can take the following values : 
 	LAYING , STANDING , WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING
+
+The following variables are all numeric data
 	
-The following variables 	
-"tBodyAcc-mean()-X" 
-"tBodyAcc-mean()-Y" 
-"tBodyAcc-mean()-Z" 
-"tBodyAcc-std()-X" 
-"tBodyAcc-std()-Y" 
-"tBodyAcc-std()-Z"
-"tGravityAcc-mean()-X" 
-"tGravityAcc-mean()-Y"
-"tGravityAcc-mean()-Z"
-"tGravityAcc-std()-X" 
-"tGravityAcc-std()-Y" 
-"tGravityAcc-std()-Z"
-"tBodyAccJerk-mean()-X"
-"tBodyAccJerk-mean()-Y" 
-"tBodyAccJerk-mean()-Z" 
-"tBodyAccJerk-std()-X" 
-"tBodyAccJerk-std()-Y" 
-"tBodyAccJerk-std()-Z" 
-"tBodyGyro-mean()-X" 
-"tBodyGyro-mean()-Y" 
-"tBodyGyro-mean()-Z" 
-"tBodyGyro-std()-X" 
-"tBodyGyro-std()-Y" 
-"tBodyGyro-std()-Z"
+"tBodyAcc-mean()-X" -- This column holds the mean of the mean of the body acceleration signal in the X direction for each subject and each activity 
+
+"tBodyAcc-mean()-Y"  -- This column holds the mean of the mean of the body acceleration signal in the Y direction for each subject and each activity 
+
+"tBodyAcc-mean()-Z"  -- This column holds the mean of the mean of the body acceleration signal in the Z direction for each subject and each activity 
+
+"tBodyAcc-std()-X"  -- This column holds the mean of the standard deviation of the body acceleration signal in the X direction for each subject and each activity 
+
+"tBodyAcc-std()-Y"  -- This column holds the mean of the standard deviation of the body acceleration signal in the Y direction for each subject and each activity 
+
+"tBodyAcc-std()-Z" -- This column holds the mean of the standard deviation of the body acceleration signal in the Z direction for each subject and each activity
+ 
+"tGravityAcc-mean()-X" -- This column holds the mean of the mean of the gravity acceleration signal in the X direction for each subject and each activity
+
+"tGravityAcc-mean()-Y"  -- This column holds the mean of the mean of the gravity acceleration signal in the Y direction for each subject and each activity
+
+"tGravityAcc-mean()-Z"  -- This column holds the mean of the mean of the gravity acceleration signal in the Z direction for each subject and each activity
+
+"tGravityAcc-std()-X" -- This column holds the mean of the standard deviation of the gravity acceleration signal in the X direction for each subject and each activity
+
+"tGravityAcc-std()-Y" -- This column holds the mean of the standard deviation of the gravity acceleration signal in the Y direction for each subject and each activity
+
+"tGravityAcc-std()-Z" -- This column holds the mean of the standard deviation of the gravity acceleration signal in the Z direction for each subject and each activity
+
+"tBodyAccJerk-mean()-X" -- This column holds the mean of the mean of the body acceleration jerk signal in the X direction for each subject and each activity
+
+"tBodyAccJerk-mean()-Y" -- This column holds the mean of the mean of the body acceleration jerk signal in the Y direction for each subject and each activity
+
+"tBodyAccJerk-mean()-Z" -- This column holds the mean of the mean of the body acceleration jerk signal in the Z direction for each subject and each activity
+
+"tBodyAccJerk-std()-X" -- This column holds the mean of the standard deviation of the body acceleration jerk signal in the X direction for each subject and each activity 
+
+"tBodyAccJerk-std()-Y" -- This column holds the mean of the standard deviation of the body acceleration jerk signal in the Y direction for each subject and each activity 
+
+"tBodyAccJerk-std()-Z" -- This column holds the mean of the standard deviation of the body acceleration jerk signal in the Z direction for each subject and each activity 
+
+"tBodyGyro-mean()-X" -- This column holds the mean of the mean of the body angular acceleration jerk signal in the X direction for each subject and each activity
+
+"tBodyGyro-mean()-Y" -- This column holds the mean of the mean of the body angular acceleration jerk signal in the Y direction for each subject and each activity
+
+"tBodyGyro-mean()-Z" -- This column holds the mean of the mean of the body angular acceleration jerk signal in the Z direction for each subject and each activity
+
+"tBodyGyro-std()-X" -- This column holds the mean of the standard deviation of the body angular acceleration jerk signal in the X direction for each subject and each activit 
+
+"tBodyGyro-std()-Y" -- This column holds the mean of the standard deviation of the body angular acceleration jerk signal in the Y direction for each subject and each activit
+
+"tBodyGyro-std()-Z" -- This column holds the mean of the standard deviation of the body angular acceleration jerk signal in the Z direction for each subject and each activity 
+All other variables also are the mean of each variable for each subject for each activity. 
 "tBodyGyroJerk-mean()-X" 
 "tBodyGyroJerk-mean()-Y"
  "tBodyGyroJerk-mean()-Z" 
